@@ -52,8 +52,8 @@ jobs:
             FRONTEND_URL=${{ secrets.FRONTEND_URL }}
             EMAIL=${{ secrets.EMAIL }}
             EMAIL_PASS=${{ secrets.EMAIL_PASS }}
-            ACCESS_TOKEN_SECRET=${{ secrets.ACCESS_TOKEN_SECRET }}
-            REFRESH_TOKEN_SECRET=${{ secrets.REFRESH_TOKEN_SECRET }}
+            SECRET_KEY_ACCESS_TOKEN=${{ secrets.SECRET_KEY_ACCESS_TOKEN }}
+            SECRET_KEY_REFRESH_TOKEN=${{ secrets.SECRET_KEY_REFRESH_TOKEN }}
             CLODINARY_API_SECRET_KEY=${{ secrets.CLODINARY_API_SECRET_KEY }}
             CLODINARY_API_KEY=${{ secrets.CLODINARY_API_KEY }}
             CLODINARY_CLOUD_NAME=${{ secrets.CLODINARY_CLOUD_NAME }}
