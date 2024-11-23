@@ -19,7 +19,7 @@ jobs:
       CLODINARY_API_SECRET_KEY: ${{ secrets.CLODINARY_API_SECRET_KEY }}
       CLODINARY_API_KEY: ${{ secrets.CLODINARY_API_KEY }}
       CLODINARY_CLOUD_NAME: ${{ secrets.CLODINARY_CLOUD_NAME }}
-      MONGODB_URI: ${{ secrets.MONGO_URI }}
+      MONGODB_URI: ${{ secrets.MONGODB_URI }}
 
     steps:
       # Step 1: Checkout Code
@@ -57,4 +57,4 @@ jobs:
             CLODINARY_API_SECRET_KEY=${{ secrets.CLODINARY_API_SECRET_KEY }}
             CLODINARY_API_KEY=${{ secrets.CLODINARY_API_KEY }}
             CLODINARY_CLOUD_NAME=${{ secrets.CLODINARY_CLOUD_NAME }}
-            MONGODB_URI=${{ secrets.MONGO_URI }}
+            MONGODB_URI=${{ secrets.MONGODB_URI}}
