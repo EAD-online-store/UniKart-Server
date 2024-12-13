@@ -124,6 +124,13 @@ export async function loginController(request, response) {
         success: false,
       });
     }
+    if (!user.verify_email) {
+      return response.status(400).json({
+        message: "Verify your email",
+        error: true,
+        success: false,
+      });
+    }
 
     if (user.status !== "Active") {
       return response.status(400).json({
