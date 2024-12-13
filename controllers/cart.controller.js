@@ -48,7 +48,7 @@ export const addToCartItemController = async(request,response)=>{
         
     } catch (error) {
         return response.status(500).json({
-            message : error.message || error,
+            message : "Database error",
             error : true,
             success : false
         })
